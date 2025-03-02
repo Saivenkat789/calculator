@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator with 3D Animations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Simple Calculator</h1>
+        <div class="input">
+            <input type="text" id="num1" placeholder="Enter first number">
+            <input type="text" id="num2" placeholder="Enter second number">
+        </div>
+        <div class="buttons">
+            <button onclick="performCalculation('add')">Add</button>
+            <button onclick="performCalculation('subtract')">Subtract</button>
+            <button onclick="performCalculation('multiply')">Multiply</button>
+            <button onclick="performCalculation('divide')">Divide</button>
+            <button onclick="performCalculation('modulus')">Modulus</button>
+        </div>
+        <div class="result">
+            <p id="result">Result will be displayed here</p>
+        </div>
+    </div>
+    <div id="3d-container"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
